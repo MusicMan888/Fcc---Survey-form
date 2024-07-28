@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Songwriter Meet Up Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Songwriter Meet Up Survey Form</h1>
+    <p id="description">We would like to create a local songwriting community to share experiences, ideas, enhance creativity - perhaps by challenging yourself to write 20 new songs in 12 hours. Known as the Immersion Music Method, the idea is: by imposing a seemingly impossible goal you can break free of the chains of perfectionism and get past the inner-critic that often results in writers' block.
+    </p>
+
+    <form id="survey-form"> 
+      <legend>Please fill in required information
+      <fieldset>
+        <label id="name-label" for="name">Name: <input id="name" type="text" required placeholder="Name" /></label>
+        <label id="email-label" for="email">Email: <input id="email" type="email" required placeholder="Email" /></label>
+        <label id="number-label" for="number">Age (must be over 18) <input id="number" type="number" min="18" max="85" required placeholder="Age" /></label>
+      </fieldset>
+      <legend>Level</legend>
+      <fieldset>
+        <label for="beginner"><input id="beginner" value="1" type="radio" name="level" class="inline" checked />Beginner</label>
+        <label for="intermediate"><input id="intermediate" value="2" type="radio" name="level" class="inline" />Intermediate</label>
+        <label for="advanced"><input id="advanced" value="3" type="radio" name="level" class="inline" />Advanced</label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">How would you prefer to participate?
+          <select id="dropdown" name="Preference">
+            <option value "">select one</option>
+            <option value "1">20 Song Game Only</opton>
+            <option value "2">Meet-Up Only</option>
+            <option value "3">Game + Virtual Meeting</option>
+            <option value "4">Game + Physical Meeting</option>
+            <option value "5">Other (please explain)</option>
+          </select>
+        </label>
+        <div class="form-group">
+          <p>Abilities
+            <span class-"clue"> (check all that apply)</span>
+          </p>
+          <label for="cb1"><input id="cb1" name="ability" value="cb1" type="checkbox" class="inline" />Play Guitar</label>
+          <label for="cb2"><input id="cb2" name="ability" value="cb2" type="checkbox" class="inline" />Play Bass</label>
+          <label for="cb3"><input id="cb3" name="ability" value="cb3" type="checkbox" class="inline" />Play Keyboards</label>
+          <label for="cb4"><input id="cb4" name="ability" value="cb4" type="checkbox" class="inline" />Play Drums</label>
+          <label for="cb5"><input id="cb5" name="ability" value="cb5" type="checkbox" class="inline" />Sing</label>
+          <label for="cb6"><input id="cb6" name="ability" value="cb6" type="checkbox" class="inline" />Record (mono or sterio)</label>
+          <label for="cb7"><input id="cb7" name="ability" value="cb7" type="checkbox" class="inline" />Record (multi-track)</label>
+        </div>
+        
+        <label for="suggestion">Suggestions:
+          <textarea id-="suggestion" name="suggestion" rows="3" cols="30" placeholder="Positive feedback is always welcome ..."></textarea></label>
+        </label>   
+      </fieldset>
+      <input id= "submit" type="submit" value="Submit" class="submit" />
+    </form>
+  </body>
+</html>
